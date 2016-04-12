@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9785FD32-2765-4620-A032-D6AE62DD4755}</ProjectGuid>
+    <RootNamespace>lego</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..;../include;../laplacian;../vcollide;..\RAPID\;..\lego\;../util/;../hybrid;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/NODEFAULTLIB:msvcrt.lib %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>fltk.lib;fltkgl.lib;glut32.lib;glu32.lib;opengl32.lib;wsock32.lib;comctl32.lib;../lua/lua51.lib;rapid_d.lib;vcollide_d.lib;gtestd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../lib;../Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries);LIBCMTD.lib</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\;../include;../laplacian;../vcollide;..\RAPID\;..\lego\;../util/;../hybrid;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>fltk.lib;fltkgl.lib;glut32.lib;glu32.lib;opengl32.lib;wsock32.lib;comctl32.lib;../lua/lua51.lib;rapid.lib;vcollide.lib;gtest.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../lib;../Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD.lib LIBCMT.lib</IgnoreSpecificDefaultLibraries>
+      <Profile>true</Profile>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\laplacian\sqpsolver.cpp" />
+    <ClCompile Include="..\test_motion_edit\test_motion_edit.cpp" />
+    <ClCompile Include="..\util\ccml.cpp" />
+    <ClCompile Include="..\util\fl_gl_slider.cpp" />
+    <ClCompile Include="..\util\motions_viewer.cpp" />
+    <ClCompile Include="collision.cpp" />
+    <ClCompile Include="common.cpp" />
+    <ClCompile Include="cook_util.cpp" />
+    <ClCompile Include="environment.cpp" />
+    <ClCompile Include="execute.cpp" />
+    <ClCompile Include="find_interaction.cpp" />
+    <ClCompile Include="get_patch.cpp" />
+    <ClCompile Include="ingredient.cpp" />
+    <ClCompile Include="interaction_util.cpp" />
+    <ClCompile Include="intersect_obj.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="make_example.cpp" />
+    <ClCompile Include="motion_edit.cpp" />
+    <ClCompile Include="..\laplacian\LineEdit2D.cpp" />
+    <ClCompile Include="..\motion\body.cpp" />
+    <ClCompile Include="..\motion\constraint.cpp" />
+    <ClCompile Include="..\motion\func.cpp" />
+    <ClCompile Include="..\motion\motion.cpp" />
+    <ClCompile Include="..\motion\online_retarget.cpp" />
+    <ClCompile Include="..\motion\posture.cpp" />
+    <ClCompile Include="..\motion\reader.cpp" />
+    <ClCompile Include="motion_util.cpp" />
+    <ClCompile Include="online_viewer.cpp" />
+    <ClCompile Include="patch_constructor.cpp" />
+    <ClCompile Include="nonslipfoot.cpp" />
+    <ClCompile Include="patch.cpp" />
+    <ClCompile Include="patches_viewer.cpp" />
+    <ClCompile Include="patch_area.cpp" />
+    <ClCompile Include="patch_cooker.cpp" />
+    <ClCompile Include="screengrab.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="test_cooker.cpp" />
+    <ClCompile Include="test_collision.cpp" />
+    <ClCompile Include="test_interaction.cpp" />
+    <ClCompile Include="test_local_tiling.cpp" />
+    <ClCompile Include="test_motion.cpp" />
+    <ClCompile Include="test_newpatch.cpp" />
+    <ClCompile Include="test_patch.cpp" />
+    <ClCompile Include="test_tiling.cpp" />
+    <ClCompile Include="tgasave.cpp" />
+    <ClCompile Include="tiling.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\combination\combination.h" />
+    <ClInclude Include="..\laplacian\sqpsolver.h" />
+    <ClInclude Include="..\util\ccml.h" />
+    <ClInclude Include="..\util\fl_gl_slider.h" />
+    <ClInclude Include="..\util\motions_viewer.h" />
+    <ClInclude Include="collision.h" />
+    <ClInclude Include="common.h" />
+    <ClInclude Include="cook_util.h" />
+    <ClInclude Include="environment.h" />
+    <ClInclude Include="execute.h" />
+    <ClInclude Include="find_interaction.h" />
+    <ClInclude Include="get_patch.h" />
+    <ClInclude Include="ingredient.h" />
+    <ClInclude Include="interaction_util.h" />
+    <ClInclude Include="intersect_obj.h" />
+    <ClInclude Include="motion_edit.h" />
+    <ClInclude Include="..\laplacian\LineEdit2D.h" />
+    <ClInclude Include="..\laplacian\umfsolver.h" />
+    <ClInclude Include="..\motion\body.h" />
+    <ClInclude Include="..\motion\constraint.h" />
+    <ClInclude Include="..\motion\func.h" />
+    <ClInclude Include="..\motion\ml.h" />
+    <ClInclude Include="..\motion\motion.h" />
+    <ClInclude Include="..\motion\online_retarget.h" />
+    <ClInclude Include="..\motion\posture.h" />
+    <ClInclude Include="..\motion\reader.h" />
+    <ClInclude Include="motion_util.h" />
+    <ClInclude Include="online_viewer.h" />
+    <ClInclude Include="patch_constructor.h" />
+    <ClInclude Include="nonslipfoot.h" />
+    <ClInclude Include="patch.h" />
+    <ClInclude Include="patches_viewer.h" />
+    <ClInclude Include="patch_area.h" />
+    <ClInclude Include="patch_cooker.h" />
+    <ClInclude Include="QPerformanceTimer.h" />
+    <ClInclude Include="screengrab.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="tgasave.h" />
+    <ClInclude Include="tiling.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

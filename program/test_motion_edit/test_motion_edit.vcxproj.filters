@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\motion">
+      <UniqueIdentifier>{a4d9f064-13cf-42b6-97d1-c94118b80c8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\laplacian">
+      <UniqueIdentifier>{634d4065-fd9d-49a3-94eb-5569f35cef92}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\util\ccml.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\fl_gl_slider.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\motion\body.h">
+      <Filter>Source Files\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\motion\constraint.h">
+      <Filter>Source Files\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\motion\func.h">
+      <Filter>Source Files\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\motion\ml.h">
+      <Filter>Source Files\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\motion\motion.h">
+      <Filter>Source Files\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\motion\online_retarget.h">
+      <Filter>Source Files\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\motion\posture.h">
+      <Filter>Source Files\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\motion\reader.h">
+      <Filter>Source Files\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\laplacian\LineEdit2D.h">
+      <Filter>Source Files\laplacian</Filter>
+    </ClInclude>
+    <ClInclude Include="..\laplacian\sqpsolver.h">
+      <Filter>Source Files\laplacian</Filter>
+    </ClInclude>
+    <ClInclude Include="..\laplacian\umfsolver.h">
+      <Filter>Source Files\laplacian</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lego\motion_edit.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\motions_viewer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\ccml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\fl_gl_slider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\motion\body.cpp">
+      <Filter>Source Files\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\motion\constraint.cpp">
+      <Filter>Source Files\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\motion\func.cpp">
+      <Filter>Source Files\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\motion\motion.cpp">
+      <Filter>Source Files\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\motion\online_retarget.cpp">
+      <Filter>Source Files\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\motion\posture.cpp">
+      <Filter>Source Files\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\motion\reader.cpp">
+      <Filter>Source Files\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="test_motion_edit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\laplacian\LineEdit2D.cpp">
+      <Filter>Source Files\laplacian</Filter>
+    </ClCompile>
+    <ClCompile Include="..\laplacian\sqpsolver.cpp">
+      <Filter>Source Files\laplacian</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lego\motion_edit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\motions_viewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

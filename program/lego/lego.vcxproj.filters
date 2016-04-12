@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\patch">
+      <UniqueIdentifier>{c1a8ad8b-07c9-43d5-813f-83b45ebbde6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\viewers">
+      <UniqueIdentifier>{9bc3b97e-00ec-4e98-8d92-0406bc107c1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils">
+      <UniqueIdentifier>{b3a49a9c-0a87-4cfb-bb52-45109922f6ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{b10135b0-39f3-4cb2-aa7c-4f6c075acb51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\collision">
+      <UniqueIdentifier>{d63bf20b-6a52-4c1b-aafe-749d8439afde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MotionEdit">
+      <UniqueIdentifier>{97d1ad61-7aae-4b65-a3c3-8e061417c133}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MotionEdit\motion">
+      <UniqueIdentifier>{f1e36886-8787-49e9-85a7-aeb724212c01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MotionEdit\laplacian">
+      <UniqueIdentifier>{d72e1d3b-6680-4fdb-b97a-2e75ac050441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cooking">
+      <UniqueIdentifier>{67bbf6d2-9757-4679-b67b-7e936797b103}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\laplacian\LineEdit2D.cpp">
+      <Filter>Source Files\MotionEdit\laplacian</Filter>
+    </ClCompile>
+    <ClCompile Include="..\motion\body.cpp">
+      <Filter>Source Files\MotionEdit\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\motion\constraint.cpp">
+      <Filter>Source Files\MotionEdit\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\motion\func.cpp">
+      <Filter>Source Files\MotionEdit\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\motion\motion.cpp">
+      <Filter>Source Files\MotionEdit\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\motion\online_retarget.cpp">
+      <Filter>Source Files\MotionEdit\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\motion\posture.cpp">
+      <Filter>Source Files\MotionEdit\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\motion\reader.cpp">
+      <Filter>Source Files\MotionEdit\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\laplacian\sqpsolver.cpp">
+      <Filter>Source Files\MotionEdit\laplacian</Filter>
+    </ClCompile>
+    <ClCompile Include="tiling.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\ccml.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="get_patch.cpp">
+      <Filter>Source Files\patch</Filter>
+    </ClCompile>
+    <ClCompile Include="patch.cpp">
+      <Filter>Source Files\patch</Filter>
+    </ClCompile>
+    <ClCompile Include="patch_area.cpp">
+      <Filter>Source Files\patch</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\motions_viewer.cpp">
+      <Filter>Source Files\viewers</Filter>
+    </ClCompile>
+    <ClCompile Include="patches_viewer.cpp">
+      <Filter>Source Files\viewers</Filter>
+    </ClCompile>
+    <ClCompile Include="execute.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_collision.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_motion.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_patch.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\test_motion_edit\test_motion_edit.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_tiling.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="screengrab.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="tgasave.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="nonslipfoot.cpp">
+      <Filter>Source Files\MotionEdit\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="collision.cpp">
+      <Filter>Source Files\collision</Filter>
+    </ClCompile>
+    <ClCompile Include="motion_edit.cpp">
+      <Filter>Source Files\MotionEdit</Filter>
+    </ClCompile>
+    <ClCompile Include="environment.cpp">
+      <Filter>Source Files\patch</Filter>
+    </ClCompile>
+    <ClCompile Include="test_local_tiling.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\fl_gl_slider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="intersect_obj.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="test_newpatch.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="find_interaction.cpp">
+      <Filter>Source Files\cooking</Filter>
+    </ClCompile>
+    <ClCompile Include="patch_cooker.cpp">
+      <Filter>Source Files\cooking</Filter>
+    </ClCompile>
+    <ClCompile Include="test_interaction.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="test_cooker.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="cook_util.cpp">
+      <Filter>Source Files\cooking</Filter>
+    </ClCompile>
+    <ClCompile Include="interaction_util.cpp">
+      <Filter>Source Files\cooking</Filter>
+    </ClCompile>
+    <ClCompile Include="patch_constructor.cpp">
+      <Filter>Source Files\cooking</Filter>
+    </ClCompile>
+    <ClCompile Include="ingredient.cpp">
+      <Filter>Source Files\patch</Filter>
+    </ClCompile>
+    <ClCompile Include="motion_util.cpp">
+      <Filter>Source Files\cooking</Filter>
+    </ClCompile>
+    <ClCompile Include="make_example.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="online_viewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\laplacian\LineEdit2D.h">
+      <Filter>Source Files\MotionEdit\laplacian</Filter>
+    </ClInclude>
+    <ClInclude Include="..\laplacian\umfsolver.h">
+      <Filter>Source Files\MotionEdit\laplacian</Filter>
+    </ClInclude>
+    <ClInclude Include="..\motion\body.h">
+      <Filter>Source Files\MotionEdit\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\motion\constraint.h">
+      <Filter>Source Files\MotionEdit\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\motion\func.h">
+      <Filter>Source Files\MotionEdit\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\motion\ml.h">
+      <Filter>Source Files\MotionEdit\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\motion\motion.h">
+      <Filter>Source Files\MotionEdit\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\motion\online_retarget.h">
+      <Filter>Source Files\MotionEdit\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\motion\posture.h">
+      <Filter>Source Files\MotionEdit\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\motion\reader.h">
+      <Filter>Source Files\MotionEdit\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\laplacian\sqpsolver.h">
+      <Filter>Source Files\MotionEdit\laplacian</Filter>
+    </ClInclude>
+    <ClInclude Include="tiling.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\ccml.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="get_patch.h">
+      <Filter>Source Files\patch</Filter>
+    </ClInclude>
+    <ClInclude Include="patch.h">
+      <Filter>Source Files\patch</Filter>
+    </ClInclude>
+    <ClInclude Include="patch_area.h">
+      <Filter>Source Files\patch</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\fl_gl_slider.h">
+      <Filter>Source Files\viewers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\motions_viewer.h">
+      <Filter>Source Files\viewers</Filter>
+    </ClInclude>
+    <ClInclude Include="patches_viewer.h">
+      <Filter>Source Files\viewers</Filter>
+    </ClInclude>
+    <ClInclude Include="execute.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="screengrab.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="tgasave.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="nonslipfoot.h">
+      <Filter>Source Files\MotionEdit\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="collision.h">
+      <Filter>Source Files\collision</Filter>
+    </ClInclude>
+    <ClInclude Include="QPerformanceTimer.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="motion_edit.h">
+      <Filter>Source Files\MotionEdit</Filter>
+    </ClInclude>
+    <ClInclude Include="environment.h">
+      <Filter>Source Files\patch</Filter>
+    </ClInclude>
+    <ClInclude Include="intersect_obj.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="find_interaction.h">
+      <Filter>Source Files\cooking</Filter>
+    </ClInclude>
+    <ClInclude Include="patch_cooker.h">
+      <Filter>Source Files\cooking</Filter>
+    </ClInclude>
+    <ClInclude Include="interaction_util.h">
+      <Filter>Source Files\cooking</Filter>
+    </ClInclude>
+    <ClInclude Include="cook_util.h">
+      <Filter>Source Files\cooking</Filter>
+    </ClInclude>
+    <ClInclude Include="patch_constructor.h">
+      <Filter>Source Files\cooking</Filter>
+    </ClInclude>
+    <ClInclude Include="ingredient.h">
+      <Filter>Source Files\patch</Filter>
+    </ClInclude>
+    <ClInclude Include="motion_util.h">
+      <Filter>Source Files\cooking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\combination\combination.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="online_viewer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

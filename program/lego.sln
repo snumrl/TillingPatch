@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lego", "lego\lego.vcxproj", "{9785FD32-2765-4620-A032-D6AE62DD4755}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{416AF142-D59B-498F-BE82-39EF7D675248}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VCollide", "VCollide\VCollide.vcxproj", "{53157B34-8600-BBAB-1200-92D9EB9850AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9785FD32-2765-4620-A032-D6AE62DD4755}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9785FD32-2765-4620-A032-D6AE62DD4755}.Debug|Win32.Build.0 = Debug|Win32
+		{9785FD32-2765-4620-A032-D6AE62DD4755}.Release|Win32.ActiveCfg = Release|Win32
+		{9785FD32-2765-4620-A032-D6AE62DD4755}.Release|Win32.Build.0 = Release|Win32
+		{53157B34-8600-BBAB-1200-92D9EB9850AF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{53157B34-8600-BBAB-1200-92D9EB9850AF}.Debug|Win32.Build.0 = Debug|Win32
+		{53157B34-8600-BBAB-1200-92D9EB9850AF}.Release|Win32.ActiveCfg = Release|Win32
+		{53157B34-8600-BBAB-1200-92D9EB9850AF}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
